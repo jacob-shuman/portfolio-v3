@@ -1,5 +1,0 @@
-pre-commit:
-  commands:
-    prettier:
-      glob: "*.{js,jsx,ts,tsx,es6}"
-      run: prettier --write --list-different {staged_files}
