@@ -4,8 +4,14 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        "page-x": "24rem",
-        "page-y": "4rem",
+        "page-x": "2rem",
+        "page-x-md": "8rem",
+        "page-x-lg": "12rem",
+        "page-x-xl": "18rem",
+        "page-y": "1rem",
+        "page-y-md": "2rem",
+        "page-y-lg": "3rem",
+        "page-y-xl": "4rem",
         section: "3rem",
         "section-item": "2rem",
       },

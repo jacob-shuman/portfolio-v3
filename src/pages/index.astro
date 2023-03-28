@@ -20,118 +20,134 @@ import "@fontsource/inter/600.css";
 import "@fontsource/inter/700.css";
 import "@fontsource/inter/800.css";
 import "@fontsource/inter/900.css";
+import Nav from "../components/Nav.astro";
+import Center from "../components/Center.astro";
 ---
 
 <Layout>
-  <nav class={tw(`flex justify-between items-center px-page-x pt-page-y`)}>
-    <div
-      class="bg-primary rounded-full w-16 h-16 flex justify-center items-center"
-    >
-      <img
-        class="w-full h-full"
-        src="/portrait.png"
-        alt="portrait of jacob shuman"
-      />
-    </div>
-
-    <div class="flex items-center gap-8 font-semibold font-poppins">
-      <!-- <a>Resources</a> -->
-
-      <a href="/resume.pdf">Resume</a>
-
-      <button class="w-8 h-8 text-dark dark:text-light">
-        <Icon pack="tabler" name="moon-stars" />
-      </button>
-    </div>
-  </nav>
+  <Nav />
 
   <main class="flex flex-col py-section gap-y-section">
-    <section class="px-page-x flex flex-col gap-y-section-item">
-      <div class="flex flex-col gap-y-2">
-        <h1 class="text-6xl font-bold font-poppins">Jacob Shuman</h1>
-        <h2 class="text-xl">
-          Technical Manager <span class="text-[#FF7700]">@IFA</span>
-        </h2>
-      </div>
+    <section class={tw(`flex flex-col gap-y-section-item`)}>
+      <Center>
+        <div class="flex flex-col gap-y-2 p-8 w-full max-w-[1024px]">
+          <h1 class="text-6xl font-bold font-poppins">Jacob Shuman</h1>
+          <h2 class="text-xl">
+            Technical Manager <span class="text-[#FF7700]">@IFA</span>
+          </h2>
+        </div>
+      </Center>
 
-      <div class="flex gap-x-6">
-        <a
-          href="https://twitter.com/jacob_shuman7"
-          class="flex flex-col items-center gap-y-2"
-        >
-          <Icon
-            pack="tabler"
-            name="brand-twitter"
-            class="w-8 h-8 text-[#1DA1F2]"
-          />
+      <Center>
+        <div class="flex gap-x-6 w-full px-8 max-w-[1024px]">
+          <a
+            href="https://twitter.com/jacob_shuman7"
+            class="flex flex-col items-center gap-y-2"
+          >
+            <Icon
+              pack="tabler"
+              name="brand-twitter"
+              class="w-8 h-8 text-[#1DA1F2]"
+            />
 
-          <div class="bg-[#1DA1F2] h-0.5 rounded-full w-16"></div>
-        </a>
+            <div class="bg-[#1DA1F2] h-0.5 rounded-full w-16"></div>
+          </a>
 
-        <a
-          href="https://github.com/jacob-shuman"
-          class="flex flex-col items-center gap-y-2"
-        >
-          <Icon
-            pack="tabler"
-            name="brand-github"
-            class="w-8 h-8 text-dark dark:text-light"
-          />
+          <a
+            href="https://github.com/jacob-shuman"
+            class="flex flex-col items-center gap-y-2"
+          >
+            <Icon
+              pack="tabler"
+              name="brand-github"
+              class="w-8 h-8 text-dark dark:text-light"
+            />
 
-          <div class="bg-dark dark:bg-light h-0.5 rounded-full w-16"></div>
-        </a>
+            <div class="bg-dark dark:bg-light h-0.5 rounded-full w-16"></div>
+          </a>
 
-        <a
-          href="https://www.linkedin.com/in/jacob-shuman-186993172/"
-          class="flex flex-col items-center gap-y-2"
-        >
-          <Icon
-            pack="tabler"
-            name="brand-linkedin"
-            class="w-8 h-8 text-[#0077B5]"
-          />
+          <a
+            href="https://www.linkedin.com/in/jacob-shuman-186993172/"
+            class="flex flex-col items-center gap-y-2"
+          >
+            <Icon
+              pack="tabler"
+              name="brand-linkedin"
+              class="w-8 h-8 text-[#0077B5]"
+            />
 
-          <div class="bg-[#0077B5] h-0.5 rounded-full w-16"></div>
-        </a>
-      </div>
+            <div class="bg-[#0077B5] h-0.5 rounded-full w-16"></div>
+          </a>
+        </div>
+      </Center>
     </section>
 
     <section class="flex flex-col gap-y-section-item">
-      <div class="px-page-x">
-        <h3 class="text-2xl font-poppins font-bold">Projects</h3>
-        <h4>
-          View more on <a
-            href="https://github.com/jacob-shuman"
-            class="underline">GitHub</a
+      <Center>
+        <div class="flex flex-col w-full max-w-[1024px] px-8">
+          <h3 class="text-2xl font-poppins font-bold">Projects</h3>
+          <h4>
+            View more on <a
+              href="https://github.com/jacob-shuman"
+              class="underline"
+            >
+              GitHub
+            </a>
+          </h4>
+        </div>
+      </Center>
+
+      <Center>
+        <div
+          class={tw(
+            `grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3`,
+            `gap-4 overflow-scroll w-full max-w-[1024px] px-8`
+          )}
+        >
+          <!-- https://www.indigenousfriends.org/app -->
+          <div
+            class="flex-shrink-0 bg-item rounded-xl flex flex-col gap-y-4 p-4"
           >
-        </h4>
-      </div>
+            <div class="bg-primary h-12 w-12 rounded-xl"></div>
 
-      <div class="px-page-x flex gap-x-8 overflow-scroll">
-        <!-- https://www.indigenousfriends.org/app -->
-        <div class="flex-shrink-0 bg-item rounded-xl flex flex-col gap-y-4 p-4">
-          <div class="bg-primary h-12 w-12 rounded-xl"></div>
+            <div>
+              <h5 class="font-semibold font-poppins text-xl">IndigiFriends</h5>
+              <p class="max-w-xs text-md text-medium">
+                A social media platform for the Indigenous peoples of Canada
+              </p>
+            </div>
+          </div>
 
-          <div>
-            <h5 class="font-semibold font-poppins text-xl">IndigiFriends</h5>
-            <p class="max-w-xs text-md text-medium">
-              A social media platform for the Indigenous peoples of Canada
-            </p>
+          <!-- https://static-lists.netlify.app/ -->
+          <div
+            class="flex-shrink-0 bg-item rounded-xl flex flex-col gap-y-4 p-4"
+          >
+            <div class="bg-primary h-12 w-12 rounded-xl"></div>
+
+            <div>
+              <h5 class="font-semibold font-poppins text-xl">static_lists</h5>
+              <p class="max-w-xs text-md text-medium">
+                A social media platform for the Indigenous peoples of Canada
+              </p>
+            </div>
+          </div>
+
+          <!-- https://countdown.jacob-shuman.ca/ -->
+          <div
+            class="flex-shrink-0 bg-item rounded-xl flex flex-col gap-y-4 p-4"
+          >
+            <!-- <div class="bg-primary h-12 w-12 rounded-xl"></div> -->
+            <img class="h-12 w-12" src="/projects/countdown.svg" />
+
+            <div>
+              <h5 class="font-semibold font-poppins text-xl">Coundown</h5>
+              <p class="max-w-xs text-md text-medium">
+                A re-creation of the death clock from the 2019 movie Countdown
+              </p>
+            </div>
           </div>
         </div>
-
-        <!-- https://static-lists.netlify.app/ -->
-        <div class="flex-shrink-0 bg-item rounded-xl flex flex-col gap-y-4 p-4">
-          <div class="bg-primary h-12 w-12 rounded-xl"></div>
-
-          <div>
-            <h5 class="font-semibold font-poppins text-xl">static_lists</h5>
-            <p class="max-w-xs text-md text-medium">
-              A social media platform for the Indigenous peoples of Canada
-            </p>
-          </div>
-        </div>
-      </div>
+      </Center>
     </section>
   </main>
 </Layout>
