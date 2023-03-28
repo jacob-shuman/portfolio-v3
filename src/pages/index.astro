@@ -33,7 +33,10 @@ import Center from "../components/Center.astro";
         <div class="flex flex-col gap-y-2 p-8 w-full max-w-[1024px]">
           <h1 class="text-6xl font-bold font-poppins">Jacob Shuman</h1>
           <h2 class="text-xl">
-            Technical Manager <span class="text-[#FF7700]">@IFA</span>
+            Technical Manager <a
+              href="https://indigenousfriends.org"
+              class="text-[#FF7700] hover:text-[#bf5900]">@IFA</a
+            >
           </h2>
         </div>
       </Center>
@@ -108,7 +111,7 @@ import Center from "../components/Center.astro";
           <div
             class="flex-shrink-0 bg-item rounded-xl flex flex-col gap-y-4 p-4"
           >
-            <div class="bg-primary h-12 w-12 rounded-xl"></div>
+            <img class="h-12 w-12" src="/projects/indigifriends.png" />
 
             <div>
               <h5 class="font-semibold font-poppins text-xl">IndigiFriends</h5>
@@ -122,12 +125,13 @@ import Center from "../components/Center.astro";
           <div
             class="flex-shrink-0 bg-item rounded-xl flex flex-col gap-y-4 p-4"
           >
-            <div class="bg-primary h-12 w-12 rounded-xl"></div>
+            <img class="h-12 w-12" src="/projects/static_lists.svg" />
 
             <div>
               <h5 class="font-semibold font-poppins text-xl">static_lists</h5>
               <p class="max-w-xs text-md text-medium">
-                A social media platform for the Indigenous peoples of Canada
+                Just a bunch of string/number lists that I've collected over the
+                years
               </p>
             </div>
           </div>
@@ -136,7 +140,6 @@ import Center from "../components/Center.astro";
           <div
             class="flex-shrink-0 bg-item rounded-xl flex flex-col gap-y-4 p-4"
           >
-            <!-- <div class="bg-primary h-12 w-12 rounded-xl"></div> -->
             <img class="h-12 w-12" src="/projects/countdown.svg" />
 
             <div>
