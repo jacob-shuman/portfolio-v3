@@ -45,7 +45,7 @@ import Center from "../components/Center.astro";
         <div class="flex gap-x-6 w-full px-8 max-w-[1024px]">
           <a
             href="https://twitter.com/jacob_shuman7"
-            class="flex flex-col items-center gap-y-2"
+            class="flex flex-col items-center gap-y-2 group"
           >
             <Icon
               pack="tabler"
@@ -53,25 +53,31 @@ import Center from "../components/Center.astro";
               class="w-8 h-8 text-[#1DA1F2]"
             />
 
-            <div class="bg-[#1DA1F2] h-0.5 rounded-full w-16"></div>
+            <div
+              class="bg-[#1DA1F2] h-0.5 rounded-full w-16 duation-300 transition-all ease-in-out group-hover:w-24"
+            >
+            </div>
           </a>
 
           <a
             href="https://github.com/jacob-shuman"
-            class="flex flex-col items-center gap-y-2"
+            class="flex flex-col items-center gap-y-2 group"
           >
             <Icon
               pack="tabler"
               name="brand-github"
-              class="w-8 h-8 text-dark dark:text-light"
+              class="w-8 h-8 text-dark dark:text-light group-active:translate-y-10"
             />
 
-            <div class="bg-dark dark:bg-light h-0.5 rounded-full w-16"></div>
+            <div
+              class="bg-dark dark:bg-light h-0.5 rounded-full w-16 transition-all duation-300 ease-in-out group-hover:w-24"
+            >
+            </div>
           </a>
 
           <a
             href="https://www.linkedin.com/in/jacob-shuman-186993172/"
-            class="flex flex-col items-center gap-y-2"
+            class="flex flex-col items-center gap-y-2 group"
           >
             <Icon
               pack="tabler"
@@ -79,7 +85,10 @@ import Center from "../components/Center.astro";
               class="w-8 h-8 text-[#0077B5]"
             />
 
-            <div class="bg-[#0077B5] h-0.5 rounded-full w-16"></div>
+            <div
+              class="bg-[#0077B5] h-0.5 rounded-full w-16 transition-all duation-300 ease-in-out group-hover:w-24"
+            >
+            </div>
           </a>
         </div>
       </Center>
