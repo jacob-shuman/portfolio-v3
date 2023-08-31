@@ -1,16 +1,4 @@
 ---
-import tw from "clsx";
-import Layout from "../layouts/Layout.astro";
-import { Icon } from "astro-icon";
-import "@fontsource/poppins/100.css";
-import "@fontsource/poppins/200.css";
-import "@fontsource/poppins/300.css";
-import "@fontsource/poppins/400.css";
-import "@fontsource/poppins/500.css";
-import "@fontsource/poppins/600.css";
-import "@fontsource/poppins/700.css";
-import "@fontsource/poppins/800.css";
-import "@fontsource/poppins/900.css";
 import "@fontsource/inter/100.css";
 import "@fontsource/inter/200.css";
 import "@fontsource/inter/300.css";
@@ -20,8 +8,20 @@ import "@fontsource/inter/600.css";
 import "@fontsource/inter/700.css";
 import "@fontsource/inter/800.css";
 import "@fontsource/inter/900.css";
-import Nav from "../components/Nav.astro";
+import "@fontsource/poppins/100.css";
+import "@fontsource/poppins/200.css";
+import "@fontsource/poppins/300.css";
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/700.css";
+import "@fontsource/poppins/800.css";
+import "@fontsource/poppins/900.css";
+import { Icon } from "astro-icon";
+import tw from "clsx";
 import Center from "../components/Center.astro";
+import Nav from "../components/Nav.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
@@ -33,60 +33,63 @@ import Center from "../components/Center.astro";
         <div class="flex flex-col gap-y-2 p-8 w-full max-w-[1024px]">
           <h1 class="text-6xl font-bold font-poppins">Jacob Shuman</h1>
           <h2 class="text-xl">
-            Technical Manager <a
+            <span>Technical Manager</span>
+            <a
               href="https://indigenousfriends.org"
-              class="text-[#FF7700] hover:text-[#bf5900]">@IFA</a
+              class="text-[#FF7700] hover:text-[#bf5900]"
             >
+              @IFA
+            </a>
           </h2>
         </div>
       </Center>
 
       <Center>
-        <div class="flex gap-x-6 w-full px-8 max-w-[1024px]">
+        <div class="flex w-full px-8 max-w-[1024px]">
           <a
             href="https://twitter.com/jacob_shuman7"
-            class="flex flex-col items-center gap-y-2 group"
+            class="flex flex-col items-center gap-y-2 group w-24"
           >
             <Icon
               pack="tabler"
               name="brand-twitter"
-              class="w-8 h-8 text-[#1DA1F2]"
+              class="w-8 h-8 text-[#1DA1F2] transition-all duration-100 ease-out group-hover:-translate-y-1 group-active:translate-y-1 group-active:scale-75"
             />
 
             <div
-              class="bg-[#1DA1F2] h-0.5 rounded-full w-16 duation-300 transition-all ease-in-out group-hover:w-24"
+              class="bg-[#1DA1F2] h-0.5 rounded-full w-16 duration-100 transition-all ease-in-out group-hover:w-24 group-hover:scale-y-150 group-active:w-8 group-active:scale-y-90"
             >
             </div>
           </a>
 
           <a
             href="https://github.com/jacob-shuman"
-            class="flex flex-col items-center gap-y-2 group"
+            class="flex flex-col items-center gap-y-2 group w-24"
           >
             <Icon
               pack="tabler"
               name="brand-github"
-              class="w-8 h-8 text-dark dark:text-light group-active:translate-y-10"
+              class="w-8 h-8 text-dark dark:text-light transition-all duration-100 ease-out group-hover:-translate-y-1 group-active:translate-y-1 group-active:scale-75"
             />
 
             <div
-              class="bg-dark dark:bg-light h-0.5 rounded-full w-16 transition-all duation-300 ease-in-out group-hover:w-24"
+              class="bg-dark dark:bg-light h-0.5 rounded-full w-16 transition-all duration-100 ease-out group-hover:w-24 group-hover:scale-y-150 group-active:w-8 group-active:scale-y-90"
             >
             </div>
           </a>
 
           <a
             href="https://www.linkedin.com/in/jacob-shuman-186993172/"
-            class="flex flex-col items-center gap-y-2 group"
+            class="flex flex-col items-center gap-y-2 group w-24"
           >
             <Icon
               pack="tabler"
               name="brand-linkedin"
-              class="w-8 h-8 text-[#0077B5]"
+              class="w-8 h-8 text-[#0077B5] transition-all duration-100 ease-out group-hover:-translate-y-1 group-active:translate-y-1 group-active:scale-75"
             />
 
             <div
-              class="bg-[#0077B5] h-0.5 rounded-full w-16 transition-all duation-300 ease-in-out group-hover:w-24"
+              class="bg-[#0077B5] h-0.5 rounded-full w-16 transition-all duration-100 ease-in-out group-hover:w-24 group-hover:scale-y-150 group-active:w-8 group-active:scale-y-90"
             >
             </div>
           </a>
@@ -118,12 +121,16 @@ import Center from "../components/Center.astro";
         >
           <a
             href="https://www.indigenousfriends.org/app"
-            class="flex-shrink-0 bg-item dark:bg-item-dark rounded-xl flex flex-col gap-y-4 p-4 text-start"
+            class="flex-shrink-0 rounded-xl flex flex-col gap-y-4 p-4 text-start hover:border-transparent hover:bg-black dark:hover:bg-white hover:scale-105 group duration-100 ease-out transition-all"
           >
             <img class="h-12 w-12" src="/projects/indigifriends.png" />
 
             <div>
-              <h5 class="font-semibold font-poppins text-xl">IndigiFriends</h5>
+              <h5
+                class="font-semibold font-poppins text-xl group-hover:text-white dark:group-hover:text-black"
+              >
+                IndigiFriends
+              </h5>
               <p class="max-w-xs text-md text-medium">
                 A social media platform for the Indigenous peoples of Canada
               </p>
@@ -132,12 +139,16 @@ import Center from "../components/Center.astro";
 
           <a
             href="https://static-lists.netlify.app/"
-            class="flex-shrink-0 bg-item dark:bg-item-dark rounded-xl flex flex-col gap-y-4 p-4 text-start"
+            class="flex-shrink-0 rounded-xl flex flex-col gap-y-4 p-4 text-start hover:bg-black dark:hover:bg-white hover:scale-105 group duration-100 ease-out transition-all"
           >
             <img class="h-12 w-12" src="/projects/static_lists.svg" />
 
             <div>
-              <h5 class="font-semibold font-poppins text-xl">static_lists</h5>
+              <h5
+                class="font-semibold font-poppins text-xl group-hover:text-white dark:group-hover:text-black"
+              >
+                static_lists
+              </h5>
               <p class="max-w-xs text-md text-medium">
                 Just a bunch of string/number lists that I've collected over the
                 years
@@ -147,12 +158,16 @@ import Center from "../components/Center.astro";
 
           <a
             href="https://countdown.jacob-shuman.ca/"
-            class="flex-shrink-0 bg-item dark:bg-item-dark rounded-xl flex flex-col gap-y-4 p-4 text-start"
+            class="flex-shrink-0 rounded-xl flex flex-col gap-y-4 p-4 text-start hover:bg-black dark:hover:bg-white hover:scale-105 group duration-100 ease-out transition-all"
           >
             <img class="h-12 w-12" src="/projects/countdown.svg" />
 
             <div>
-              <h5 class="font-semibold font-poppins text-xl">Coundown</h5>
+              <h5
+                class="font-semibold font-poppins text-xl group-hover:text-white dark:group-hover:text-black"
+              >
+                Coundown
+              </h5>
               <p class="max-w-xs text-md text-medium">
                 A re-creation of the death clock from the 2019 movie Countdown
               </p>

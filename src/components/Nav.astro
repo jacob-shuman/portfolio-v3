@@ -1,8 +1,6 @@
 ---
 import tw from "clsx";
-import MenuButton from "./MenuButton.svelte";
 import Center from "./Center.astro";
-import Icon from "astro-icon";
 ---
 
 <Center class={tw(`flex justify-center w-full`)}>
@@ -25,7 +23,10 @@ import Icon from "astro-icon";
     <div class="flex items-center gap-8 font-semibold font-poppins text-lg">
       <!-- <a>Resources</a> -->
 
-      <a class="hidden sm:inline" href="/resume.pdf">Resume</a>
+      <a
+        class="hidden sm:inline rounded-xl hover:border-transparent hover:bg-primary duration-100 ease-out transition-all px-4 py-2 hover:text-light hover:-translate-y-1"
+        href="/resume.pdf">Resume</a
+      >
       <!-- <Icon pack="tabler" name="moon-stars" /> -->
 
       <!-- <MenuButton client:load>
