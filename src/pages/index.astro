@@ -29,20 +29,22 @@ import Layout from "../layouts/Layout.astro";
 
   <main class="flex flex-col py-section gap-y-section">
     <section class={tw(`flex flex-col gap-y-section-item`)}>
-      <Center>
-        <div class="flex flex-col gap-y-2 p-8 w-full max-w-[1024px]">
-          <h1 class="text-6xl font-bold font-poppins">Jacob Shuman</h1>
-          <h2 class="text-xl">
-            <span>Technical Manager</span>
-            <a
-              href="https://indigenousfriends.org"
-              class="text-[#FF7700] hover:text-[#bf5900]"
-            >
-              @IFA
-            </a>
-          </h2>
-        </div>
-      </Center>
+      <div class="hidden sm:block">
+        <Center>
+          <div class="flex flex-col gap-y-2 p-8 w-full max-w-[1024px]">
+            <h1 class="text-6xl font-bold font-poppins">Jacob Shuman</h1>
+            <h2 class="text-xl">
+              <span>Technical Manager</span>
+              <a
+                href="https://indigenousfriends.org"
+                class="text-[#FF7700] hover:text-[#bf5900]"
+              >
+                @IFA
+              </a>
+            </h2>
+          </div>
+        </Center>
+      </div>
 
       <Center>
         <div class="flex w-full px-8 max-w-[1024px]">

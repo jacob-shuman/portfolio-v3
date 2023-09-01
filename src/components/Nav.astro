@@ -10,21 +10,36 @@ import Center from "./Center.astro";
       `w-full max-w-[1024px]`
     )}
   >
-    <div
-      class="bg-primary rounded-full min-w-[2rem] max-w-[4rem] flex justify-center items-center"
-    >
-      <img
-        class="w-full h-full"
-        src="/portrait.png"
-        alt="portrait of jacob shuman"
-      />
+    <div class="flex items-center gap-x-4">
+      <div
+        class="bg-primary rounded-full min-w-[2rem] max-w-[4rem] flex justify-center items-center"
+      >
+        <img
+          class="w-full h-full"
+          src="/portrait.png"
+          alt="portrait of jacob shuman"
+        />
+      </div>
+
+      <div class="flex flex-col sm:hidden">
+        <h1 class="font-bold text-lg font-poppins">Jacob Shuman</h1>
+        <h2 class="">
+          <span>Technical Manager</span>
+          <a
+            href="https://indigenousfriends.org"
+            class="text-[#FF7700] hover:text-[#bf5900]"
+          >
+            @IFA
+          </a>
+        </h2>
+      </div>
     </div>
 
     <div class="flex items-center gap-8 font-semibold font-poppins text-lg">
       <!-- <a>Resources</a> -->
 
       <a
-        class="hidden sm:inline rounded-xl hover:border-transparent hover:bg-primary duration-100 ease-out transition-all px-4 py-2 hover:text-light hover:-translate-y-1"
+        class="hidden sm:inline rounded-xl hover:bg-primary duration-100 ease-out transition-all px-4 py-2 hover:-translate-y-1 active:-translate-y-1 active:scale-75"
         href="/resume.pdf">Resume</a
       >
       <!-- <Icon pack="tabler" name="moon-stars" /> -->
