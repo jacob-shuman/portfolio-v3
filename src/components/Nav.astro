@@ -6,7 +6,7 @@ import Center from "./Center.astro";
 <Center class={tw(`flex justify-center w-full`)}>
   <nav
     class={tw(
-      `flex justify-between items-center p-8 pb-0`,
+      `gap-y-4 sm:gap-y-0 flex-col flex sm:flex-row justify-start sm:justify-between sm:items-center p-8 pb-0`,
       `w-full max-w-[1024px]`
     )}
   >
@@ -39,7 +39,7 @@ import Center from "./Center.astro";
       <!-- <a>Resources</a> -->
 
       <a
-        class="hidden sm:inline rounded-xl hover:bg-primary hover:text-light duration-100 ease-out transition-all px-4 py-2 hover:-translate-y-1"
+        class="rounded-xl hover:bg-primary hover:text-light duration-100 ease-out transition-all px-4 py-2 hover:-translate-y-1"
         href="/resume.pdf"
       >
         Resume
