@@ -15,7 +15,7 @@ import Center from "./Center.astro";
         class="bg-primary rounded-full min-w-[2rem] max-w-[4rem] flex justify-center items-center"
       >
         <img
-          class="w-full h-full"
+          class="w-full h-full hover:animate-spin"
           src="/portrait.png"
           alt="portrait of jacob shuman"
         />
@@ -36,22 +36,12 @@ import Center from "./Center.astro";
     </div>
 
     <div class="flex items-center gap-8 font-semibold font-poppins text-lg">
-      <!-- <a>Resources</a> -->
-
       <a
         class="rounded-xl hover:bg-primary hover:text-light duration-100 ease-out transition-all px-4 py-2 hover:-translate-y-1"
         href="/resume.pdf"
       >
         Resume
       </a>
-      <!-- <Icon pack="tabler" name="moon-stars" /> -->
-
-      <!-- <MenuButton client:load>
-        <h1 slot="open">open</h1>
-        <h1 slot="closed">close</h1> -->
-      <!-- <Icon slot="open" pack="tabler" name="x" />
-        <Icon slot="closed" pack="tabler" name="menu" /> -->
-      <!-- </MenuButton> -->
     </div>
   </nav>
 </Center>
