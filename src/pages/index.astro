@@ -17,7 +17,7 @@ import "@fontsource/poppins/600.css";
 import "@fontsource/poppins/700.css";
 import "@fontsource/poppins/800.css";
 import "@fontsource/poppins/900.css";
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 import tw from "clsx";
 import Center from "../components/Center.astro";
 import Nav from "../components/Nav.astro";
@@ -53,8 +53,7 @@ import Layout from "../layouts/Layout.astro";
             class="flex flex-col items-center gap-y-2 group w-24"
           >
             <Icon
-              pack="tabler"
-              name="brand-twitter"
+              name="tabler:brand-twitter"
               class="w-8 h-8 text-[#1DA1F2] transition-all duration-100 ease-out group-hover:-translate-y-1 group-active:translate-y-1 group-active:scale-75"
             />
 
@@ -69,8 +68,7 @@ import Layout from "../layouts/Layout.astro";
             class="flex flex-col items-center gap-y-2 group w-24"
           >
             <Icon
-              pack="tabler"
-              name="brand-github"
+              name="tabler:brand-github"
               class="w-8 h-8 text-dark dark:text-light transition-all duration-100 ease-out group-hover:-translate-y-1 group-active:translate-y-1 group-active:scale-75"
             />
 
@@ -85,8 +83,7 @@ import Layout from "../layouts/Layout.astro";
             class="flex flex-col items-center gap-y-2 group w-24"
           >
             <Icon
-              pack="tabler"
-              name="brand-linkedin"
+              name="tabler:brand-linkedin"
               class="w-8 h-8 text-[#0077B5] transition-all duration-100 ease-out group-hover:-translate-y-1 group-active:translate-y-1 group-active:scale-75"
             />
 
