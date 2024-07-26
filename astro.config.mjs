@@ -11,5 +11,4 @@ export default defineConfig({
   integrations: [tailwind(), svelte(), sitemap(), icon()],
   output: "server",
   adapter: cloudflare(),
-  // vite: { ssr: { external: ["svgo"] } },
 });
