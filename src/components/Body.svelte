@@ -1,7 +1,6 @@
 <script>
-  import tw from "clsx";
-</script>
+  </script>
 
-<body class={tw(`bg-light text-dark dark:bg-dark dark:text-light font-inter`)}>
+<body class="bg-light text-dark dark:bg-dark dark:text-light font-inter">
   <slot />
 </body>
