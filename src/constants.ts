@@ -23,6 +23,13 @@ export const Projects: Project[] = [
     image: "/projects/indigifriends.png",
   },
   {
+    name: "readl8r",
+    description: "A no-nonsense read later service",
+    url: "https://github.com/jacob-shuman/readl8r",
+    stack: "SvelteKit/Tailwind/Kysely/SQLite",
+    image: "/projects/readl8r.svg",
+  },
+  {
     name: "ephemurl",
     description: "A collection of FOSS tools and games",
     url: "https://ephm.app",
